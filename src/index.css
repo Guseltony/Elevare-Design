@@ -19,6 +19,8 @@
 
   /* background theme */
   --color-bg: #0a0a0a;
+
+  --radius-6xl: 4rem;
 }
 
 @tailwind utilities;

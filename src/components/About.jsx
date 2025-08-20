@@ -1,15 +1,38 @@
 import React from 'react'
+import aboutImg from '../assets/images/about-img.jpg'
 
 const About = () => {
+
+  const styles = {
+    backgroundImage: `url(${aboutImg})`,
+  }
   return (
-    <section id='about' className='w-screen h-[80dvh] bg-bg/80 backdrop-blur-md shadow-2xl flex-center'>
-        <div>
-            <div className="img-sect">
-                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                      
-                    <path fill="#FF0066" d="M21.6,-41.8C28.8,-29,35.9,-24.3,39.6,-17.7C43.2,-11,43.4,-2.4,41,5C38.6,12.4,33.6,18.6,30.7,32.4C27.8,46.2,27,67.7,21.1,67.3C15.3,66.9,4.3,44.6,-11,39.3C-26.4,34,-46.2,45.6,-57.9,43.7C-69.6,41.8,-73.1,26.4,-71.2,12.7C-69.3,-0.9,-61.8,-12.9,-57.9,-28.4C-53.9,-44,-53.3,-63.1,-44.3,-75C-35.2,-87,-17.6,-91.8,-5.2,-83.7C7.2,-75.6,14.4,-54.6,21.6,-41.8Z" transform="translate(100 100)" />
-                </svg>
+    <section id='about' className='w-screen border-2 border-green-800 bg-bg/80 backdrop-blur-md shadow-2xl px-[10%]'>
+        <div className='w-full border-2 border-white flex justify-between items-center mt-20'>
+            <div
+            className="w-[500px] h-[600px] bg-cover bg-center relative rounded-br-6xl rounded-tl-6xl"
+            style={styles}>
+              <div className="circle-2 w-[100px] h-[100px] rounded-full absolute bg-primary top-0"></div>
+              <div className="circle-1 w-[100px] h-[100px] rounded-full absolute bg-primary bottom-0 right-0"></div>
             </div>
+
+            <div className='w-[50%]'>
+                  <p className='text-xs text-primary font-bold'>Creative design solutions crafted to inspire and engage.</p>
+                  <h1 className="font-header uppercase text-2xl inline-flex font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Elevare Brands</h1>
+                  <p className='text-sm'>Elevare Design is a creative design studio committed to transforming visions into timeless brand experiences.
+                  We specialize in branding, web design, and digital experiences that blend artistry with strategy. Our goal is simple: help businesses stand out, connect with their audience, and grow with purpose.</p>
+                <div>
+                <div>
+                  <span className='font-btn text-sm'>Elevare Mission</span>
+                  <p className='text-xs'>At Elevare Design, our mission is to elevate businesses through thoughtful, innovative, and human-centered design. We believe great design is not just about aesthetics — it’s about creating experiences that inspire trust, communicate values, and drive impact.</p>
+                </div>
+                <div>
+                  <span className='font-btn text-sm'>Elevare Vision</span>
+                  <p className='text-xs'>We envision a world where brands aren’t just seen, but remembered — where design is the bridge between creativity and meaningful connections.</p>
+                </div>
+              </div>
+        </div>
+        
         </div>
     </section>
   )

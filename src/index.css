@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+  /* font family */
+  --font-logo: 'Rosca', sans-serif;
+  --font-nav: 'Galey', sans-serif;
+  --font-btn: 'Rogy', sans-serif;
+  --font-header: 'Harmoneux', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@theme {
+  /* color theme */
+  --color-primary: #3abef9;
+  --color-secondary: #8a2be2;
+  --color-accent: #2a9dcf;
+
+  /* background theme */
+  --color-bg: #0a0a0a;
+}
+
+@tailwind utilities;
+
+body {
+  color: #ffffff;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+#hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./assets/images/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(58, 190, 249, 0.7), 0 0 20px rgba(138, 43, 226, 0.5);
+}
+
+/* font face */
+
+@font-face {
+  font-family: 'Rosca';
+  src: url('/fonts/rosca.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Galey';
+  src: url('/fonts/Galey.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rogy';
+  src: url('/fonts/Rogy.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Harmoneux';
+  src: url('/fonts/Harmoneux.woff2') format('woff2');
+}
+
+@layer component {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}
+
+.btn {
+  @apply px-4 py-2 font-bold hover:bg-primary hover:text-white hover:rounded-md transition-all duration-300 text-sm cursor-pointer tracking-wider;
+}
+
+.btn-general {
+  @apply text-secondary bg-white;
+}
+
+/* font classes */
+.font-logo {
+  font-family: var(--font-logo);
+}
+.font-nav {
+  font-family: var(--font-nav);
+}
+.font-btn {
+  font-family: var(--font-btn);
+}
+.font-header {
+  font-family: var(--font-header);
+}
+
+/* .colored-icon {
+  filter: invert(40%) sepia(89%) saturate(600%) hue-rotate(200deg)
+    brightness(100%) contrast(100%);
+} */
+
+.icon-image {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-secondary); /* new color */
+  -webkit-mask: url('./src/assets/images/idea.png') no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url('./src/assets/images/idea.png') no-repeat center;
+  mask-size: contain;
+  animation: blinkIcon 1.5s ease-in-out infinite;
+}
+
+@keyframes blinkIcon {
+  0%,
+  100% {
+    filter: brightness(0.4);
+  }
+  50% {
+    filter: brightness(1);
+  }
+}

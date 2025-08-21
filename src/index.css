@@ -30,6 +30,7 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #hero {

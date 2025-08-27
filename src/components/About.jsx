@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id='about' className='w-screen relative'>
 
-      <GradientCircle top={'top-0'} left={'left-0'} bottom={'bottom-0'} right={'right-0'} />
+      <GradientCircle top={'top-0'} left={'left-0'} bottom={'bottom-0'} right={'right-0'} middleTop={'top-1/2'} />
     
       <div className='relative w-full h-full z-20 bg-bg/80 backdrop-blur-md shadow-2xl px-[15%] py-20'>
 

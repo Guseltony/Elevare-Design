@@ -5,7 +5,7 @@ import { GradientCircle } from './utilities/GradientCircle'
 const Project = () => {
   return (
       <section id="portfolio" className='w-screen relative min-h-screen flex items-center justify-center text-center '>
-          <GradientCircle top={'top-0'} left={'left-0'} bottom={'bottom-0'} right={'right-0'} />
+          <GradientCircle top={'top-0'} left={'left-0'} bottom={'bottom-0'} right={'right-0'} middleTop={'top-1/2'} />
 
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4 relative w-full h-full z-20 bg-bg/80 backdrop-blur-md shadow-2xl px-[15%] py-20">
   {projectsArray.map((item, index) => (

@@ -15,17 +15,19 @@ export const TestimonialsCard = ({image, customerName, company, comment}) => {
                         <h1 className='text-sm font-bold text-accent'>{ customerName }</h1>
                         <h1 className='text-xs text-secondary'>{ company }</h1>
                     </div>
-                  <div className="relative w-28 h-28">
-  {/* Circle mask only for bottom part */}
-  <div className="absolute inset-0 rounded-full border-4 border-primary"></div>
+                    <div className="relative w-28 h-28">
+                        {/* Circle background mask */}
+                        <div className="absolute inset-0 rounded-full overflow-hidden">
+                            <img
+                            src={image}
+                            alt="profile"
+                            className="w-full h-full object-cover object-top scale-110"
+                            />
+                        </div>
 
-  {/* Image slightly outside the circle */}
-  <img
-    src={image}
-    alt="profile"
-    className="absolute -top-2 w-28 h-32 object-cover object-top"
-  />
-</div>
+                        {/* Optional gradient border behind */}
+                        <div className="absolute bottom-0 right-1/2 translate-x-1/2 w-24 h-24 rounded-full bg-gradient-to-t from-primary via-secondary to-accent -z-10"></div>
+                    </div>
 
               </div>
           </div>

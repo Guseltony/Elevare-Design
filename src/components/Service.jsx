@@ -8,7 +8,7 @@ import { GradientCircle } from './utilities/GradientCircle'
 const Service = () => {
 return (
     <section id="service" className='w-screen relative'>
-        <GradientCircle top={'top-0'} rightB={'right-0'} bottom={'bottom-0'} leftB={'left-0'} />
+        <GradientCircle top={'top-0'} rightB={'right-0'} bottom={'bottom-0'} leftB={'left-0'} middleTop={'top-1/2'} />
 
         <div className='relative w-full h-full z-20 bg-bg/80 backdrop-blur-md shadow-2xl px-[15%] py-20'>
             <div className='flex-between flex-row'>

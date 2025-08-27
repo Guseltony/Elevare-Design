@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Project from "./components/Project"
 import Service from "./components/Service"
+import Team from "./components/Team"
+import Testimonial from "./components/Testimonial"
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <About />
       <Service />
       <Project />
+      <Team />
+      <Testimonial />
     </>
   )
 }
